@@ -1,0 +1,146 @@
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 5vh;
+    margin: 20px 30px;
+}
+#first-section {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    width: 100vw;
+    height: 70vh;
+  
+}
+#main {
+    width: 310px;
+    height: 70%;
+    line-height: 1.1;
+}
+
+#images {
+    width: 400px;
+    height: 60%;
+    position: relative;
+}
+#images img:nth-of-type(1) {
+    width: 400px;
+    position: relative;
+    left: 15px;
+    top: 67px;
+    z-index: -1;
+}
+
+#images img:nth-of-type(2) {
+    width: 360px;
+    position: relative;
+    left: 60px;
+    top: -285px;
+}
+
+#second-section {
+    width: 100vw;
+    height: 15vh;
+    margin: 80px auto;
+}
+
+#dropdown {
+    margin: 0 auto;
+    width: 95vw;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    border-radius: 60px;
+    box-shadow: 0 0 20px 0 #00000033 inset;
+    padding:20px 10px;
+
+}
+
+#third-section {
+    width: 86vw;
+    height: 45vh;
+    margin: 0 auto;
+}
+
+.slider {
+    display: flex;
+    height: 200px;
+    width: 641px;
+    overflow-y: hidden;
+    overflow-x: scroll !important;
+    padding: 16px;
+    transform: scroll(calc(var(--i, 0)/var(--n)*-100%));
+    scroll-behavior: smooth;
+    margin: 0 auto;
+    position: relative;
+}
+
+.control-prev-btn {
+    position: relative;
+    top: -131px;
+    left: -11px;
+  
+}
+
+.control-next-btn {
+    position: relative;
+    top: -162px;
+    right: -675px;
+
+}
+
+#back {
+    width: 687px;
+    height: 186px;
+    background-color: #DFDEDE;
+    box-shadow: -2px 4px 4.5px 0 #00000040;
+    z-index: -1;
+    position: relative;
+    top: -43%;
+    left: 2%;
+    margin: 0 auto;
+    border-radius: 51px;
+}
+
+#fourth-section {
+    width: 100vw;
+    height: 120vh;
+    margin: 0 auto;
+    line-height: 1;
+    text-align: center;
+}
+
+#grid {
+    width: 100vw;
+    height: 120vh;
+    margin: 0 auto;
+    line-height: 1;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 400px);
+    grid-template-rows: repeat(2, 550px);
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+    align-self: center;
+}
+
+
+#footer {
+    width: 100vw;
+    height: 53vh;
+    background-color: #D9D9D9;
+    display: grid;
+    grid-template-columns: repeat(3,200px);
+    grid-template-rows: repeat(2,200px);
+    justify-content: center;
+    align-items: start;
+    column-gap: 46px;
+}

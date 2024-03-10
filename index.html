@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars Web</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="(max-width:500px)" href="mobilescreen.css">
+    <link rel="stylesheet" media="(min-width:500px) and (max-width:1000px)" href="ipadscreen.css">
+    <link rel="icon" href="compact-car.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body id="body">
+    <button id="back-to-top"><a href="#first-section"><img src="up-arrows.png" alt=""></a></button>
+    <div id="animation">
+        <div class="loader">
+            <div class="loader-square"></div>
+            <div class="loader-square"></div>
+            <div class="loader-square"></div>
+            <div class="loader-square"></div>
+            <div class="loader-square"></div>
+            <div class="loader-square"></div>
+            <div class="loader-square"></div>
+            </div><br>
+        <h1 id="h1-title">
+            <!-- Element to contain animated typing -->
+            <span id="element"></span>
+
+            <!-- Load library from the CDN -->
+            <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+            <!-- Setup and start animation! -->
+            <script>
+                var typed = new Typed('#element', {
+                    strings: ['<i> Welcome To Our Web </i>', '&amp; Thanks For Your Visiting ..'],
+                    typeSpeed: 80,
+                    loop: true,
+                });
+            </script>
+        </h1>
+    </div>
+    <nav class="navbar">
+        <img id="logo" src="Logo.png" alt="Logo">
+        <div id="links">
+            <a href="#fisrt-section">Home</a>
+            <a href="#third-section">Catalogue</a>
+            <a href="#footer">Contact Us</a>
+            <a href="#">Help</a>
+            <button id="dark"><img src="half-moon.png" alt=""></button>
+            <button id="light"><img src="contrast.png" alt=""></button>
+        </div>
+        <div id="cart">
+            <a href=""><img src="cart.png" alt="MyCart"></a>
+            <button id="b1" type="button">Register</button>
+        </div>
+
+        <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+                <span></span>
+            </label>
+
+            <ul class="menu__box">
+
+                <li><a class="menu__item" href="#">Home</a></li>
+                <li><a class="menu__item" href="#">Catalogue</a></li>
+                <li><a class="menu__item" href="#">Contact Us</a></li>
+                <li><a class="menu__item" href="#">Help</a></li>
+             
+
+
+            </ul>
+        </div>
+
+    </nav>
+
+    <section id="first-section">
+        <div id="main">
+            <h4>Arriving Summer 2019</h4>
+            <h1> MAKE EVERY DAY
+                LEGENDARY.</h1>
+            <p>
+                The culmimination of comfort,luxury,and powerrul living is embodied
+                in the First-Ever BMWX7 -the biggest BMW ever built.
+            </p>
+            <a href="../Details/index.html"><button type="button" id="explore">Explore</button></a>
+
+        </div>
+        <div id="images">
+            <img src="Vector 1.png" alt="Vector">
+            <img src="68f9a3c07615a35e40f6ae98efce3a76-removebg-preview 1_out.png" alt="car">
+        </div>
+    </section>
+
+    <section id="second-section">
+        <div id="dropdown">
+            <div id="container">
+                <h2>Name</h2>
+                <div id="drop">
+                    <label for=""><img src="icon car.png" alt="car-icon"></label>
+                    <select id="menu">
+                        <option>Chose name</option>
+                        <option value="BMW">BMW</option>
+                        <option value="Bugatti">Bugatti</option>
+                        <option value="Audi">Audi</option>
+                    </select>
+                </div>
+            </div>
+            <div id="container">
+                <h2>price</h2>
+                <div id="drop">
+                    <label for=""><img src="Vector.png" alt="icon"></label>
+                    <select id="menu">
+                        <option>Chose price</option>
+                        <option value="6000">6000</option>
+                        <option value="500">5000</option>
+                        <option value="4000">4000</option>
+                    </select>
+                </div>
+            </div>
+            <div id="container">
+                <h2>Engine Capicity</h2>
+                <div id="drop">
+                    <label for=""><img src="Vector (1).png" alt="icon"></label>
+                    <select id="menu">
+                        <option>Chose capicity</option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                </div>
+            </div>
+            <div id="container">
+                <h2>Brand</h2>
+                <div id="drop">
+                    <label for=""><img src="Vector (2).png" alt="icon"></label>
+                    <select id="menu">
+                        <option>Chose brand</option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                </div>
+            </div>
+            <button id="search">
+                Search
+            </button>
+        </div>
+    </section>
+
+    <section id="third-section">
+
+        <h1>Find By Car Type</h1>
+        <div id="slider-container" class="slider">
+            <div class="slide">
+                <img src="karl-kohler-Hf1rAKkfMAg-unsplash.jpg" alt="audi">
+                <div id="overlay">Audi</div>
+            </div>
+            <div class="slide">
+                <img src="jon-koop-khYVyHiNZo0-unsplash.jpg" alt="bmw">
+                <div id="overlay">BMW</div>
+            </div>
+            <div class="slide">
+                <img src="david-leveque-esvWH-owWug-unsplash.jpg" alt="Bugatti">
+                <div id="overlay">Bugatti</div>
+            </div>
+            <div class="slide">
+                <img src="dhiva-krishna-YApS6TjKJ9c-unsplash.jpg" alt="marcedes">
+
+            </div>
+            <div class="slide">
+                <img src="dima-panyukov-DwxlhTvC16Q-unsplash.jpg" alt="marcedes">
+            </div>
+            <div class="slide">
+                <img src="olav-tvedt-6lSBynPRaAQ-unsplash.jpg" alt="car">
+            </div>
+
+
+
+        </div>
+        <div onclick="prev()" class="control-prev-btn">
+            <i class="fa">&#xf0d9;</i>
+        </div>
+        <div onclick="next()" class="control-next-btn">
+            <i class="fa">&#xf0da;</i>
+        </div>
+
+        <div id="back"></div>
+
+
+        <!-- <div class="overlay"></div> -->
+    </section>
+
+    <section id="fourth-section">
+        <h1>Top Categories</h1>
+        <div id="grid">
+            <div id="category">
+                <img id="audi" src="kalden-swart-ZrAFxf40nJc-unsplash.jpg" alt="">
+                <h1>AUDI</h1>
+                <div id="info">
+                    <div id="seat">
+                        <img src="seat-svgrepo-com(1) 1.png" alt="seat">
+                        <p>4 Seator</p>
+                    </div>
+                    <div id="seat">
+                        <img src="wheel-to-control-vehicles-svgrepo-com(1) 2.png" alt="wheel-control">
+                        <p>Manual</p>
+                    </div>
+                    <div id="seat">
+                        <img src="SVGRepo_iconCarrier.png" alt="time">
+                        <p>5 KM/1-lt</p>
+                    </div>
+                </div>
+                <p>Starting at $500/Day</p>
+                <div id="buttons">
+                    <button id="details" type="button">Details
+                        <i class="fa">&#xf105;</i>
+                    </button>
+                    <button id="Buy" type="button">Buy Now</button>
+                </div>
+            </div>
+            <div id="category">
+                <img id="audi" src="serjan-midili-Hjl6WPNNI_c-unsplash.jpg" alt="bmw">
+                <h1>BMW</h1>
+                <div id="info">
+                    <div id="seat">
+                        <img src="seat-svgrepo-com(1) 1.png" alt="seat">
+                        <p>4 Seator</p>
+                    </div>
+                    <div id="seat">
+                        <img src="wheel-to-control-vehicles-svgrepo-com(1) 2.png" alt="wheel-control">
+                        <p>Manual</p>
+                    </div>
+                    <div id="seat">
+                        <img src="SVGRepo_iconCarrier.png" alt="time">
+                        <p>5 KM/1-lt</p>
+                    </div>
+                </div>
+                <p>Starting at $500/Day</p>
+                <div id="buttons">
+                    <button id="details" type="button">Details
+                        <i class="fa">&#xf105;</i>
+                    </button>
+                    <button id="Buy" type="button">Buy Now</button>
+                </div>
+            </div>
+            <div id="category">
+                <img id="audi" src="akthar-navas-v9ARc6COwfg-unsplash.jpg" alt="">
+                <h1>HONDA</h1>
+                <div id="info">
+                    <div id="seat">
+                        <img src="seat-svgrepo-com(1) 1.png" alt="seat">
+                        <p>4 Seator</p>
+                    </div>
+                    <div id="seat">
+                        <img src="wheel-to-control-vehicles-svgrepo-com(1) 2.png" alt="wheel-control">
+                        <p>Manual</p>
+                    </div>
+                    <div id="seat">
+                        <img src="SVGRepo_iconCarrier.png" alt="time">
+                        <p>5 KM/1-lt</p>
+                    </div>
+                </div>
+                <p>Starting at $500/Day</p>
+                <div id="buttons">
+                    <button id="details" type="button">Details
+                        <i class="fa">&#xf105;</i>
+                    </button>
+                    <button id="Buy" type="button">Buy Now</button>
+                </div>
+            </div>
+            <div id="category">
+                <img id="audi" src="picture_out.png" alt="">
+                <h1>VOLVO</h1>
+                <div id="info">
+                    <div id="seat">
+                        <img src="seat-svgrepo-com(1) 1.png" alt="seat">
+                        <p>4 Seator</p>
+                    </div>
+                    <div id="seat">
+                        <img src="wheel-to-control-vehicles-svgrepo-com(1) 2.png" alt="wheel-control">
+                        <p>Manual</p>
+                    </div>
+                    <div id="seat">
+                        <img src="SVGRepo_iconCarrier.png" alt="time">
+                        <p>5 KM/1-lt</p>
+                    </div>
+                </div>
+                <p>Starting at $500/Day</p>
+                <div id="buttons">
+                    <button id="details" type="button">Details
+                        <i class="fa">&#xf105;</i>
+                    </button>
+                    <button id="Buy" type="button">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer">
+        <div>
+            <h1><img src="Logo.png" alt="logo"></h1>
+            <h1>CAR COMPANY</h1>
+        </div>
+        <div>
+            <h1>menu</h1>
+            <p>Home</p>
+            <p>Car Catalogue</p>
+            <p>Service</p>
+        </div>
+        <div>
+            <h1>Further Information</h1>
+            <p>Terms & Conditions</p>
+            <p>Car Catalogue</p>
+            <p>Privacy Policy</p>
+        </div>
+        <div>
+            <h1>Contact Us</h1>
+            <p><img src="lcation.png" alt="location">647P+4G5,Seif Al-Dolah,Aleppo,Syria </p>
+            <p><img src="phone.png" alt="num">+96323456</p>
+            <p><img src="mail.png" alt="Email">targed@gmail.com</p>
+        </div>
+        <div>
+            <h1>Contact Us</h1>
+            <a href=""><img src="facebook.png" alt="facebook"></a>
+            <a href=""><img src="twiter.png" alt="twitter"></a>
+            <a href=""><img src="instagram.png" alt="instagram"></a>
+        </div>
+    </section>
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="main.js">
+
+    </script>
+
+</body>
+
+</html>
